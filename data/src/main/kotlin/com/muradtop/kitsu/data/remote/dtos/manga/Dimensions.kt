@@ -16,7 +16,7 @@ data class Dimensions(
 )
 
 fun Dimensions.toDomain() =
-    com.muradtop.kitsu.domain.models.manga.DimensionsModel(
+   DimensionsModel(
         tiny.toDomain(),
         small.toDomain(),
         medium.toDomain(),

@@ -4,13 +4,14 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.timplifier.kitsu.databinding.ItemAnimeBinding
-import com.timplifier.kitsu.presentation.base.BaseDiffUtil
-import com.timplifier.kitsu.presentation.extensions.loadImageWithGlide
-import com.timplifier.kitsu.presentation.models.anime.AnimeDataUI
+import com.muradtop.kitsu.presentation.base.BaseDiffUtil
+import com.muradtop.kitsu.presentation.models.anime.AnimeDataUI
+import com.muradtop.kitsu.databinding.ItemAnimeBinding
+import com.muradtop.kitsu.presentation.extensions.loadImageWithGlide
+
 
 class AnimeAdapter(
-    private val onItemClick: (id: String) -> Unit
+    private val onItemClick: (id: String, videoId: String?) -> Unit,
 ) : PagingDataAdapter<AnimeDataUI, AnimeAdapter.AnimeViewHolder>(BaseDiffUtil()) {
 
 
@@ -34,7 +35,10 @@ class AnimeAdapter(
             binding.imAnime.loadImageWithGlide(animeDataDto.animeDto.posterImage?.original)
 
             binding.root.setOnClickListener {
-                onItemClick(animeDataDto.id)
+                if (animeDataDto.animeDto.youtubeVideoId != null)
+                    onItemClick(animeDataDto.id, animeDataDto.animeDto.youtubeVideoId)
+                else onItemClick(animeDataDto.id, null)
+
             }
 
 

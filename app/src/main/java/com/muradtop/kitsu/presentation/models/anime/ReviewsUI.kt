@@ -6,4 +6,4 @@ data class ReviewsUI(
     val links: LinksXXXXXXUI
 )
 
-fun com.muradtop.kitsu.domain.models.anime.ReviewsModel.toUI() = ReviewsUI(links.toUI())
+fun  ReviewsModel.toUI() = ReviewsUI(links.toUI())

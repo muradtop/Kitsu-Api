@@ -7,4 +7,4 @@ data class LargeXUI(
     val height: Int?
 )
 
-fun com.muradtop.kitsu.domain.models.anime.LargeXModel.toUI() = LargeXUI(width, height)
+fun LargeXModel.toUI() = LargeXUI(width, height)

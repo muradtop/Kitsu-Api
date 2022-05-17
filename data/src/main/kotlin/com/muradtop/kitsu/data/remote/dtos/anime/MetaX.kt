@@ -9,6 +9,6 @@ data class MetaX(
     val dimensions: DimensionsX
 )
 
-fun MetaX.toDomain() = com.muradtop.kitsu.domain.models.anime.MetaXModel(
+fun MetaX.toDomain() =  MetaXModel(
     dimensions.toDomain()
 )

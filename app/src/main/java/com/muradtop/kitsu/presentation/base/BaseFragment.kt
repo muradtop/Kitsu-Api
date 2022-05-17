@@ -9,7 +9,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.paging.PagingData
 import androidx.viewbinding.ViewBinding
-import com.timplifier.kitsu.presentation.ui.state.UIState
+import com.muradtop.kitsu.presentation.ui.state.UIState
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.collectLatest
@@ -19,6 +19,7 @@ abstract class BaseFragment<Binding : ViewBinding, ViewModel : BaseViewModel>(@L
     Fragment(
         layoutId
     ) {
+
     protected abstract val binding: Binding
     protected abstract val viewModel: ViewModel
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

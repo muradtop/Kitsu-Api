@@ -1,7 +1,7 @@
 package com.muradtop.kitsu.data.remote
 
-import com.timplifier.data.BuildConfig
-import com.timplifier.kitsu.data.local.preferences.PreferencesHelper
+import com.muradtop.data.BuildConfig
+import com.muradtop.kitsu.data.local.preferences.PreferencesHelper
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

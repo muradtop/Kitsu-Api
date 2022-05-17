@@ -11,4 +11,4 @@ data class Small(
     val height: Int?
 )
 
-fun Small.toDomain() = com.muradtop.kitsu.domain.models.manga.SmallModel(width, height)
+fun Small.toDomain() =  SmallModel(width, height)

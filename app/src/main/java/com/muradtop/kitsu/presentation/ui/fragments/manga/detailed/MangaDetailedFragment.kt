@@ -3,10 +3,10 @@ package com.muradtop.kitsu.presentation.ui.fragments.manga.detailed
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.timplifier.kitsu.R
-import com.timplifier.kitsu.databinding.FragmentMangaDetailedBinding
-import com.timplifier.kitsu.presentation.base.BaseFragment
-import com.timplifier.kitsu.presentation.extensions.loadImageWithGlide
+import com.muradtop.kitsu.R
+import com.muradtop.kitsu.databinding.FragmentMangaDetailedBinding
+import com.muradtop.kitsu.presentation.base.BaseFragment
+import com.muradtop.kitsu.presentation.extensions.loadImageWithGlide
 import dagger.hilt.android.AndroidEntryPoint
 
 

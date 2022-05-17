@@ -11,4 +11,4 @@ data class LargeX(
     val height: Int?
 )
 
-fun LargeX.toDomain() = com.muradtop.kitsu.domain.models.anime.LargeXModel(width, height)
+fun LargeX.toDomain() =  LargeXModel(width, height)

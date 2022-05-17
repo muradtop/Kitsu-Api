@@ -20,7 +20,8 @@ data class TokenDto(
 )
 
 fun TokenDto.toDomain() =
-    com.muradtop.kitsu.domain.models.auth.TokenModel(
+
+    TokenModel(
         accessToken,
         createdAt,
         expiresIn,

@@ -9,6 +9,6 @@ data class Categories(
     val links: LinksXX
 )
 
-fun Categories.toDomain() = com.muradtop.kitsu.domain.models.anime.CategoriesModel(
+fun Categories.toDomain() =  CategoriesModel(
     links.toDomain()
 )

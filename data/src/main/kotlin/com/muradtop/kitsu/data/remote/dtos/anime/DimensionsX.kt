@@ -13,7 +13,7 @@ data class DimensionsX(
     val large: LargeX
 )
 
-fun DimensionsX.toDomain() = com.muradtop.kitsu.domain.models.anime.DimensionsXModel(
+fun DimensionsX.toDomain() = DimensionsXModel(
     tiny.toDomain(),
     small.toDomain(),
     large.toDomain()

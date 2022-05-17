@@ -2,6 +2,7 @@ package com.muradtop.kitsu.presentation.models.anime
 
 import com.muradtop.kitsu.domain.models.anime.CoverImageModel
 
+
 data class CoverImageUI(
     val tiny: String,
     val small: String,
@@ -10,4 +11,4 @@ data class CoverImageUI(
     val meta: MetaXUI
 )
 
-fun com.muradtop.kitsu.domain.models.anime.CoverImageModel.toUI() = CoverImageUI(tiny, small, large, original, meta.toUI())
+fun CoverImageModel.toUI() = CoverImageUI(tiny, small, large, original, meta.toUI())

@@ -13,7 +13,7 @@ data class AnimeListDto(
     val links: LinksXXXXXXXXXXXXX? = null
 )
 
-fun AnimeListDto.toDomain() = com.muradtop.kitsu.domain.models.anime.AnimeListModel(
+fun AnimeListDto.toDomain() =  AnimeListModel(
     data.map { it.toDomain() }, meta?.toDomain(), links?.toDomain()
 )
 

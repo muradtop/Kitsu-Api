@@ -9,6 +9,6 @@ data class MetaXX(
     val count: Int
 )
 
-fun MetaXX.toDomain() = com.muradtop.kitsu.domain.models.anime.MetaXXModel(
+fun MetaXX.toDomain() =  MetaXXModel(
     count
 )

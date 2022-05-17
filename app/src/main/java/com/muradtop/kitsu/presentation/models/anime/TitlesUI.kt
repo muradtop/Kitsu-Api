@@ -8,4 +8,4 @@ data class TitlesUI(
     val jaJp: String?
 )
 
-fun com.muradtop.kitsu.domain.models.anime.TitlesModel.toUI() = TitlesUI(en, enJp, jaJp)
+fun  TitlesModel.toUI() = TitlesUI(en, enJp, jaJp)

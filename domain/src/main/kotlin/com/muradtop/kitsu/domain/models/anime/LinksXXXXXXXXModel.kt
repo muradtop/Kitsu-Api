@@ -1,6 +1,6 @@
 package com.muradtop.kitsu.domain.models.anime
 
-data class LinksXXXXXXXXModel(
+data class  LinksXXXXXXXXModel(
     val self: String,
     val related: String
 )

@@ -17,7 +17,7 @@ data class RelationshipsUI(
     val animeStaff: AnimeStaffUI?
 )
 
-fun com.muradtop.kitsu.domain.models.anime.RelationshipsModel.toUI() = RelationshipsUI(
+fun  RelationshipsModel.toUI() = RelationshipsUI(
     genres?.toUI(),
     categories?.toUI(),
     castings?.toUI(),

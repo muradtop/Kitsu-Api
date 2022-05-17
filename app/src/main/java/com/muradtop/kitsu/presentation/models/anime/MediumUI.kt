@@ -7,4 +7,4 @@ data class MediumUI(
     val height: Int?
 )
 
-fun com.muradtop.kitsu.domain.models.anime.MediumModel.toUI() = MediumUI(width, height)
+fun  MediumModel.toUI() = MediumUI(width, height)

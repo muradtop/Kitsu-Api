@@ -1,7 +1,7 @@
 package com.muradtop.kitsu.presentation.ui.fragments.auth
 
-import com.timplifier.kitsu.R
-import com.timplifier.kitsu.presentation.base.BaseFlowFragment
+import com.muradtop.kitsu.R
+import com.muradtop.kitsu.presentation.base.BaseFlowFragment
 
 
 class SignInFlowFragment :

@@ -6,4 +6,4 @@ data class MediaRelationshipsUI(
     val links: LinksXXXXXXXUI
 )
 
-fun com.muradtop.kitsu.domain.models.anime.MediaRelationshipsModel.toUI() = MediaRelationshipsUI(links.toUI())
+fun  MediaRelationshipsModel.toUI() = MediaRelationshipsUI(links.toUI())

@@ -12,6 +12,6 @@ data class LinksXXXXXXXX(
 
 )
 
-fun LinksXXXXXXXX.toDomain() = com.muradtop.kitsu.domain.models.manga.LinksXXXXXXXXModel(
+fun LinksXXXXXXXX.toDomain() =  LinksXXXXXXXXModel(
     self, related
 )

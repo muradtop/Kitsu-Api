@@ -1,9 +1,9 @@
 package com.muradtop.kitsu.presentation.ui.fragments.manga.detailed
 
-import com.timplifier.kitsu.domain.useCases.FetchDetailedMangaUseCase
-import com.timplifier.kitsu.presentation.base.BaseViewModel
-import com.timplifier.kitsu.presentation.models.manga.SingleMangaUI
-import com.timplifier.kitsu.presentation.models.manga.toUI
+import com.muradtop.kitsu.domain.useCases.FetchDetailedMangaUseCase
+import com.muradtop.kitsu.presentation.base.BaseViewModel
+import com.muradtop.kitsu.presentation.models.manga.SingleMangaUI
+import com.muradtop.kitsu.presentation.models.manga.toUI
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.asStateFlow
 import javax.inject.Inject

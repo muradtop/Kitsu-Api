@@ -4,11 +4,11 @@ import android.util.Log
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.timplifier.kitsu.R
-import com.timplifier.kitsu.databinding.FragmentMangaBinding
-import com.timplifier.kitsu.presentation.base.BaseFragment
-import com.timplifier.kitsu.presentation.extensions.directionsSafeNavigation
-import com.timplifier.kitsu.presentation.ui.adapters.MangaAdapter
+import com.muradtop.kitsu.R
+import com.muradtop.kitsu.databinding.FragmentMangaBinding
+import com.muradtop.kitsu.presentation.base.BaseFragment
+import com.muradtop.kitsu.presentation.extensions.directionsSafeNavigation
+import com.muradtop.kitsu.presentation.ui.adapters.MangaAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

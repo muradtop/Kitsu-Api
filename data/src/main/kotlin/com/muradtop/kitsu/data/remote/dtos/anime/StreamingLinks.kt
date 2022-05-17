@@ -10,4 +10,4 @@ data class StreamingLinks(
 )
 
 fun StreamingLinks.toDomain() =
-    com.muradtop.kitsu.domain.models.anime.StreamingLinksModel(links.toDomain())
+    StreamingLinksModel(links.toDomain())

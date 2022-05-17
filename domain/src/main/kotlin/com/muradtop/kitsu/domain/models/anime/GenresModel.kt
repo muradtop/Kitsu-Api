@@ -1,5 +1,5 @@
 package com.muradtop.kitsu.domain.models.anime
 
 data class GenresModel(
-    val linksXModel: com.muradtop.kitsu.domain.models.anime.LinksXModel
+    val linksXModel:  LinksXModel
 )

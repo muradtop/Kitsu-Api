@@ -1,8 +1,8 @@
 package com.muradtop.kitsu.di
 
-import com.timplifier.kitsu.data.repositories.AnimeRepositoryImpl
-import com.timplifier.kitsu.data.repositories.AuthenticationRepositoryImpl
-import com.timplifier.kitsu.data.repositories.MangaRepositoryImpl
+import com.muradtop.kitsu.data.repositories.AnimeRepositoryImpl
+import com.muradtop.kitsu.data.repositories.AuthenticationRepositoryImpl
+import com.muradtop.kitsu.data.repositories.MangaRepositoryImpl
 import com.muradtop.kitsu.domain.repositories.AnimeRepository
 import com.muradtop.kitsu.domain.repositories.AuthenticationRepository
 import com.muradtop.kitsu.domain.repositories.MangaRepository
@@ -17,11 +17,11 @@ abstract class RepositoriesModule {
     @Binds
     abstract fun bindAnimeRepository(
         animeRepositoryImpl: AnimeRepositoryImpl
-    ): com.muradtop.kitsu.domain.repositories.AnimeRepository
+    ): AnimeRepository
 
     @Binds
-    abstract fun bindMangaRepository(mangaRepositoryImpl: MangaRepositoryImpl): com.muradtop.kitsu.domain.repositories.MangaRepository
+    abstract fun bindMangaRepository(mangaRepositoryImpl: MangaRepositoryImpl): MangaRepository
 
     @Binds
-    abstract fun bindAuthenticationRepository(authenticationRepositoryImpl: AuthenticationRepositoryImpl): com.muradtop.kitsu.domain.repositories.AuthenticationRepository
+    abstract fun bindAuthenticationRepository(authenticationRepositoryImpl: AuthenticationRepositoryImpl): AuthenticationRepository
 }

@@ -33,7 +33,7 @@ data class MangaUI(
     val mangaType: String
 )
 
-fun com.muradtop.kitsu.domain.models.manga.MangaModel.toUI() =
+fun  MangaModel.toUI() =
     MangaUI(
         createdAt,
         updatedAt,

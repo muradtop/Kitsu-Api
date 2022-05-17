@@ -9,4 +9,4 @@ data class Mappings(
     val links: LinksXXXXX
 )
 
-fun Mappings.toDomain() = com.muradtop.kitsu.domain.models.manga.MappingsModel(links.toDomain())
+fun Mappings.toDomain() =  MappingsModel(links.toDomain())

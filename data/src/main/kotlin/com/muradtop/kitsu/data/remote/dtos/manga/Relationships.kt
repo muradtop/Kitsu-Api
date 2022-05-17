@@ -27,7 +27,7 @@ data class Relationships(
     val mangaStaff: MangaStaff
 )
 
-fun Relationships.toDomain() = com.muradtop.kitsu.domain.models.manga.RelationshipsModel(
+fun Relationships.toDomain() =  RelationshipsModel(
     genres.toDomain(),
     categories.toDomain(),
     castings.toDomain(),

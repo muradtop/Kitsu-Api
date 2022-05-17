@@ -2,6 +2,7 @@ package com.muradtop.kitsu.presentation.models.anime
 
 import com.muradtop.kitsu.domain.models.anime.DimensionsModel
 
+
 data class DimensionsUI(
 
     val tiny: TinyUI,
@@ -10,6 +11,6 @@ data class DimensionsUI(
     val large: LargeUI
 )
 
-fun com.muradtop.kitsu.domain.models.anime.DimensionsModel.toUI() = DimensionsUI(
+fun DimensionsModel.toUI() = DimensionsUI(
     tiny.toUI(), small.toUI(), medium.toUI(), large.toUI()
 )

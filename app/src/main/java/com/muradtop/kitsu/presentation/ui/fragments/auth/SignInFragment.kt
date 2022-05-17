@@ -3,11 +3,11 @@ package com.muradtop.kitsu.presentation.ui.fragments.auth
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.timplifier.kitsu.R
-import com.timplifier.kitsu.databinding.FragmentSignInBinding
-import com.timplifier.kitsu.presentation.base.BaseFragment
-import com.timplifier.kitsu.presentation.extensions.mainNavControllerNavigation
-import com.timplifier.kitsu.presentation.extensions.safeNavigation
+import com.muradtop.kitsu.R
+import com.muradtop.kitsu.databinding.FragmentSignInBinding
+import com.muradtop.kitsu.presentation.base.BaseFragment
+import com.muradtop.kitsu.presentation.extensions.mainNavControllerNavigation
+import com.muradtop.kitsu.presentation.extensions.safeNavigation
 import dagger.hilt.android.AndroidEntryPoint
 
 

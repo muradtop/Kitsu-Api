@@ -11,4 +11,4 @@ data class Tiny(
     val height: Int?
 )
 
-fun Tiny.toDomain() = com.muradtop.kitsu.domain.models.anime.TinyModel(width, height)
+fun Tiny.toDomain() =  TinyModel(width, height)

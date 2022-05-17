@@ -10,4 +10,4 @@ data class MangaStaff(
 )
 
 fun MangaStaff.toDomain() =
-    com.muradtop.kitsu.domain.models.manga.MangaStaffModel(links.toDomain())
+   MangaStaffModel(links.toDomain())

@@ -5,5 +5,5 @@ import com.muradtop.kitsu.domain.models.auth.TokenModel
 import kotlinx.coroutines.flow.Flow
 
 interface AuthenticationRepository {
-    fun authenticate(username: String, password: String): Flow<com.muradtop.kitsu.domain.either.Either<String, com.muradtop.kitsu.domain.models.auth.TokenModel>>
+    fun authenticate(username: String, password: String): Flow<Either<String, TokenModel>>
 }

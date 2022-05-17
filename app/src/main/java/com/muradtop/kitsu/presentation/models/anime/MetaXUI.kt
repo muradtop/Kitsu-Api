@@ -6,4 +6,4 @@ data class MetaXUI(
     val dimensions: DimensionsXUI
 )
 
-fun com.muradtop.kitsu.domain.models.anime.MetaXModel.toUI() = MetaXUI(dimensionsXModel.toUI())
+fun  MetaXModel.toUI() = MetaXUI(dimensionsXModel.toUI())

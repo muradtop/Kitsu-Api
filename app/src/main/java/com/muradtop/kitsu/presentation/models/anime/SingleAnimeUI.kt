@@ -6,4 +6,4 @@ data class SingleAnimeUI(
     val data: AnimeDataUI
 )
 
-fun com.muradtop.kitsu.domain.models.anime.SingleAnimeModel.toUI() = SingleAnimeUI(data.toUI())
+fun  SingleAnimeModel.toUI() = SingleAnimeUI(data.toUI())

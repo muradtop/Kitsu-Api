@@ -7,4 +7,4 @@ data class LinksXXXXXXUI(
     val related: String
 )
 
-fun com.muradtop.kitsu.domain.models.manga.LinksXXXXXXModel.toUI() = LinksXXXXXXUI(self, related)
+fun  LinksXXXXXXModel.toUI() = LinksXXXXXXUI(self, related)

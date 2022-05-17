@@ -1,9 +1,9 @@
 package com.muradtop.kitsu.presentation.ui.fragments.auth
 
-import com.timplifier.kitsu.domain.useCases.SignInUseCase
-import com.timplifier.kitsu.presentation.base.BaseViewModel
-import com.timplifier.kitsu.presentation.models.auth.TokenUI
-import com.timplifier.kitsu.presentation.models.auth.toUI
+import com.muradtop.kitsu.domain.useCases.SignInUseCase
+import com.muradtop.kitsu.presentation.base.BaseViewModel
+import com.muradtop.kitsu.presentation.models.auth.TokenUI
+import com.muradtop.kitsu.presentation.models.auth.toUI
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.asStateFlow
 import javax.inject.Inject

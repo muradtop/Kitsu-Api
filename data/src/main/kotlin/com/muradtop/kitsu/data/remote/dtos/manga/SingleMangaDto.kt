@@ -9,5 +9,5 @@ data class SingleMangaDto(
 )
 
 fun SingleMangaDto.toDomain() =
-    com.muradtop.kitsu.domain.models.manga.SingleMangaModel(data.toDomain())
+    SingleMangaModel(data.toDomain())
 

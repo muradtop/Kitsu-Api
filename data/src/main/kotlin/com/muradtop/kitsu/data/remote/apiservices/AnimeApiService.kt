@@ -1,7 +1,7 @@
 package com.muradtop.kitsu.data.remote.apiservices
 
-import com.timplifier.kitsu.data.remote.dtos.anime.AnimeListDto
-import com.timplifier.kitsu.data.remote.dtos.anime.SingleAnimeDto
+import com.muradtop.kitsu.data.remote.dtos.anime.AnimeListDto
+import com.muradtop.kitsu.data.remote.dtos.anime.SingleAnimeDto
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query

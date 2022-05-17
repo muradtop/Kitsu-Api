@@ -9,7 +9,7 @@ data class AnimeProductions(
     val links: LinksXXXXXXXXXX
 )
 
-fun AnimeProductions.toDomain() = com.muradtop.kitsu.domain.models.anime.AnimeProductionsModel(
+fun AnimeProductions.toDomain() =  AnimeProductionsModel(
 
     links.toDomain()
 )

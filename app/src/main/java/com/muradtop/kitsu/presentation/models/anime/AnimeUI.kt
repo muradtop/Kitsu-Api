@@ -1,6 +1,5 @@
 package com.muradtop.kitsu.presentation.models.anime
 
-import com.muradtop.kitsu.domain.models.anime.AnimeModel
 
 data class AnimeUI(
     val createdAt: String?,

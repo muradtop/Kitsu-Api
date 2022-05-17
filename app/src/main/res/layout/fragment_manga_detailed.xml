@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,7 +9,7 @@
         android:id="@+id/im_cover"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:contentDescription="@string/image_for_anime_s_cover_image"
+        android:contentDescription="anime_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -53,8 +54,7 @@
             android:id="@+id/im_poster"
             android:layout_width="100dp"
             android:layout_height="150dp"
-            android:contentDescription="@string/anime_s_poster"
-
+            android:contentDescription="anime_s_poster"
             tools:src="@tools:sample/avatars" />
 
     </com.google.android.material.card.MaterialCardView>
@@ -80,24 +80,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="2dp"
         android:fontFamily="@font/helvetica_regular"
-        android:text="@string/tv"
-        android:textColor="@color/white"
+        android:text="tv"
+        android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@id/gl_subtype"
         app:layout_constraintTop_toBottomOf="@id/im_cover" />
 
-    <TextView
-        android:id="@+id/tv_bullet_point"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:fontFamily="@font/helvetica_regular"
-        android:text="@string/bullet_point"
-        android:textColor="@color/white"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@id/tv_year"
-        app:layout_constraintStart_toEndOf="@id/tv_subtype"
-        app:layout_constraintTop_toBottomOf="@id/im_cover" />
+
 
     <TextView
         android:id="@+id/tv_year"
@@ -106,8 +95,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="2dp"
         android:fontFamily="@font/helvetica_regular"
-        android:text="@string/_2017"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
+        android:text="r"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@id/tv_subtype"
         app:layout_constraintTop_toBottomOf="@id/im_cover" />
@@ -119,7 +108,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/helvetica_bold"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@id/gl_subtype"
         app:layout_constraintTop_toBottomOf="@id/tv_subtype"
@@ -129,10 +118,10 @@
         android:id="@+id/tv_synopsis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/helvetica_regular"
-        android:text="@string/it_is_a_really_long_text_even_you_are_not_gonna_catch_up_with_me_typing_this"
+        android:text="top"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@id/gl_poster_image"
         app:layout_constraintTop_toBottomOf="@id/cv_poster" />
@@ -161,7 +150,7 @@
                 android:layout_marginTop="6dp"
                 android:layout_marginEnd="10dp"
                 android:fontFamily="@font/helvetica_regular"
-                android:text="@string/kitsu_score"
+                android:text="Kitsu score"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -174,7 +163,7 @@
                 android:layout_marginTop="3dp"
                 android:layout_marginBottom="4dp"
                 android:fontFamily="@font/helvetica_bold"
-                android:text="@string/_64"
+                android:text="64%"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -192,7 +181,7 @@
 
 
         android:layout_height="24dp"
-        android:contentDescription="@string/star_for_rating"
+        android:contentDescription="star_for_rating"
         android:src="@drawable/ic_detailed_star"
         app:layout_constraintBottom_toBottomOf="@id/cv_score"
         app:layout_constraintStart_toStartOf="@id/gl_ranks"
@@ -205,7 +194,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:fontFamily="@font/helvetica_bold"
-        android:text="@string/rank_7691"
+        android:text="rank_7561"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@id/cv_score"
         app:layout_constraintStart_toStartOf="@id/gl_subtype"
@@ -217,7 +206,7 @@
         android:layout_height="24dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/black"
-        android:contentDescription="@string/heart_for_popularity"
+        android:contentDescription="heart_for_popularity"
         android:src="@drawable/ic_popularity"
         app:layout_constraintStart_toStartOf="@id/gl_ranks"
         app:layout_constraintTop_toBottomOf="@id/im_rating" />
@@ -228,7 +217,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:fontFamily="@font/helvetica_bold"
-        android:text="@string/rank_204"
+        android:text="Rank 204"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@id/cv_score"
         app:layout_constraintStart_toStartOf="@id/gl_subtype"

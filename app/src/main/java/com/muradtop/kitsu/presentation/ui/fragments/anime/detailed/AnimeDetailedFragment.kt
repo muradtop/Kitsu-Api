@@ -1,15 +1,17 @@
 package com.muradtop.kitsu.presentation.ui.fragments.anime.detailed
 
+import android.content.Intent
+import android.net.Uri
 import android.util.Log
+import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.timplifier.kitsu.R
-import com.timplifier.kitsu.databinding.FragmentAnimeDetailedBinding
-import com.timplifier.kitsu.presentation.base.BaseFragment
-import com.timplifier.kitsu.presentation.extensions.loadImageWithGlide
+import com.muradtop.kitsu.R
+import com.muradtop.kitsu.databinding.FragmentAnimeDetailedBinding
+import com.muradtop.kitsu.presentation.base.BaseFragment
+import com.muradtop.kitsu.presentation.extensions.loadImageWithGlide
 import dagger.hilt.android.AndroidEntryPoint
-
 
 @AndroidEntryPoint
 class AnimeDetailedFragment :
@@ -20,16 +22,20 @@ class AnimeDetailedFragment :
 
 
     override fun establishRequest() {
-        viewModel.fetchSingleAnime(args.animeId)
+        viewModel.fetchADetailedAnime(args.animeId)
     }
 
     override fun launchObservers() {
-        subscribeToSingleAnime()
+        subscribeToAnimeDetailed()
 
     }
 
-    private fun subscribeToSingleAnime() {
-        viewModel.singleAnimeState.spectateUiState(success = {
+    override fun setupListeners() {
+        openYoutubeAnimeTrailer()
+    }
+
+    private fun subscribeToAnimeDetailed() {
+        viewModel.animeDetailedState.spectateUiState(success = {
             binding.apply {
 
                 it.apply {
@@ -42,6 +48,10 @@ class AnimeDetailedFragment :
                     tvAverageRating.text = "${data.animeDto.averageRating}%"
                     tvRating.text = "Rank #${data.animeDto.ratingRank}"
                     tvPopularity.text = "Rank #${data.animeDto.popularityRank}"
+                    if (args.videoId != null) {
+                        btnYoutubeVideo.isVisible = true
+                    }
+
 
                 }
 
@@ -53,5 +63,16 @@ class AnimeDetailedFragment :
         )
     }
 
-
+    private fun openYoutubeAnimeTrailer() {
+        binding.btnYoutubeVideo.setOnClickListener {
+            this.startActivity(
+                Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse("vnd.youtube:${args.videoId}")
+                )
+            )
+        }
+    }
 }
+
+

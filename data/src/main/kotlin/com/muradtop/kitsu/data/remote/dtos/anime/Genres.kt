@@ -9,6 +9,6 @@ data class Genres(
     val links: LinksX
 )
 
-fun Genres.toDomain() = com.muradtop.kitsu.domain.models.anime.GenresModel(
+fun Genres.toDomain() =  GenresModel(
     links.toDomain()
 )

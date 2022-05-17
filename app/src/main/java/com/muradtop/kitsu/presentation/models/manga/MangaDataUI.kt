@@ -1,7 +1,6 @@
 package com.muradtop.kitsu.presentation.models.manga
 
-import com.muradtop.kitsu.domain.models.manga.MangaDataModel
-import com.timplifier.kitsu.presentation.base.BaseDiffModel
+import com.muradtop.kitsu.presentation.base.BaseDiffModel
 
 data class MangaDataUI(
     override val id: String,

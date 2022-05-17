@@ -6,5 +6,5 @@ data class PosterImageModel(
     val medium: String,
     val large: String,
     val original: String,
-    val meta: com.muradtop.kitsu.domain.models.anime.MetaModel
+    val meta:  MetaModel
 )

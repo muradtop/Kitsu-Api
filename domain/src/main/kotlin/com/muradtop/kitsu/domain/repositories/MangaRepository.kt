@@ -5,5 +5,5 @@ import com.muradtop.kitsu.domain.models.manga.SingleMangaModel
 import kotlinx.coroutines.flow.Flow
 
 interface MangaRepository {
-    fun fetchDetailedManga(id: String): Flow<com.muradtop.kitsu.domain.either.Either<String, com.muradtop.kitsu.domain.models.manga.SingleMangaModel>>
+    fun fetchDetailedManga(id: String): Flow<Either<String, SingleMangaModel>>
 }

@@ -1,9 +1,9 @@
 package com.muradtop.kitsu.data.remote
 
-import com.timplifier.kitsu.data.extensions.createAnApi
-import com.timplifier.kitsu.data.remote.apiservices.AnimeApiService
-import com.timplifier.kitsu.data.remote.apiservices.AuthenticationApiService
-import com.timplifier.kitsu.data.remote.apiservices.MangaApiService
+import com.muradtop.kitsu.data.extensions.createAnApi
+import com.muradtop.kitsu.data.remote.apiservices.AnimeApiService
+import com.muradtop.kitsu.data.remote.apiservices.AuthenticationApiService
+import com.muradtop.kitsu.data.remote.apiservices.MangaApiService
 import javax.inject.Inject
 
 class NetworkClient @Inject constructor(

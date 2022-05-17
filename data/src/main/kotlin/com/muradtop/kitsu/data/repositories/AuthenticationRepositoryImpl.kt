@@ -1,12 +1,10 @@
 package com.muradtop.kitsu.data.repositories
 
-import com.timplifier.kitsu.data.local.preferences.PreferencesHelper
-import com.timplifier.kitsu.data.remote.apiservices.AuthenticationApiService
-import com.timplifier.kitsu.data.remote.dtos.auth.AuthDto
-import com.timplifier.kitsu.data.remote.dtos.auth.toDomain
-import com.timplifier.kitsu.data.repositories.base.BaseRepository
-import com.muradtop.kitsu.domain.models.auth.TokenModel
-import com.muradtop.kitsu.domain.repositories.AuthenticationRepository
+import com.muradtop.kitsu.data.local.preferences.PreferencesHelper
+import com.muradtop.kitsu.data.remote.apiservices.AuthenticationApiService
+import com.muradtop.kitsu.data.remote.dtos.auth.AuthDto
+import com.muradtop.kitsu.data.remote.dtos.auth.toDomain
+import com.muradtop.kitsu.data.repositories.base.BaseRepository
 import javax.inject.Inject
 
 class AuthenticationRepositoryImpl @Inject constructor(

@@ -9,4 +9,4 @@ data class Links(
     val self: String
 )
 
-fun Links.toDomain() = com.muradtop.kitsu.domain.models.anime.LinksModel(self)
+fun Links.toDomain() =  LinksModel(self)

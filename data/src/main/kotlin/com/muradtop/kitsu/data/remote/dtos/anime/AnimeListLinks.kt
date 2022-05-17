@@ -16,6 +16,6 @@ data class LinksXXXXXXXXXXXXX(
 )
 
 fun LinksXXXXXXXXXXXXX.toDomain() =
-    com.muradtop.kitsu.domain.models.anime.LinksXXXXXXXXXXXXXModel(
+     LinksXXXXXXXXXXXXXModel(
         first, prev, next, last
     )

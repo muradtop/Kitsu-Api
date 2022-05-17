@@ -6,6 +6,6 @@ data class MetaUI(
     val dimensions: DimensionsUI
 )
 
-fun com.muradtop.kitsu.domain.models.anime.MetaModel.toUI() = MetaUI(
+fun  MetaModel.toUI() = MetaUI(
     dimensionsModel.toUI()
 )

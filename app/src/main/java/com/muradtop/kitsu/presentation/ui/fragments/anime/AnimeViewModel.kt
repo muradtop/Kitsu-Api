@@ -1,8 +1,8 @@
 package com.muradtop.kitsu.presentation.ui.fragments.anime
 
-import com.timplifier.kitsu.data.repositories.AnimeRepositoryImpl
-import com.timplifier.kitsu.presentation.base.BaseViewModel
-import com.timplifier.kitsu.presentation.models.anime.toUI
+import com.muradtop.kitsu.data.repositories.AnimeRepositoryImpl
+import com.muradtop.kitsu.presentation.base.BaseViewModel
+import com.muradtop.kitsu.presentation.models.anime.toUI
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

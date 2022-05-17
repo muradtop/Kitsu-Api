@@ -1,7 +1,7 @@
 package com.muradtop.kitsu.data.remote.apiservices
 
-import com.timplifier.kitsu.data.remote.dtos.auth.AuthDto
-import com.timplifier.kitsu.data.remote.dtos.auth.TokenDto
+import com.muradtop.kitsu.data.remote.dtos.auth.AuthDto
+import com.muradtop.kitsu.data.remote.dtos.auth.TokenDto
 import retrofit2.http.Body
 import retrofit2.http.POST
 

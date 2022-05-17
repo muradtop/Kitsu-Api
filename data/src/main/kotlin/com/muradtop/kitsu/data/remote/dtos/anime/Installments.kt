@@ -1,4 +1,4 @@
-package com.muradtop.kitsu.data.remote.dtos.anime
+ package com.muradtop.kitsu.data.remote.dtos.anime
 
 
 import com.google.gson.annotations.SerializedName
@@ -9,6 +9,6 @@ data class Installments(
     val links: LinksXXXX
 )
 
-fun Installments.toDomain() = com.muradtop.kitsu.domain.models.anime.InstallmentsModel(
+fun Installments.toDomain() =  InstallmentsModel(
     links.toDomain()
 )

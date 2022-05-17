@@ -2,6 +2,7 @@ package com.muradtop.kitsu.data.remote.dtos.anime
 
 
 import com.google.gson.annotations.SerializedName
+import com.muradtop.kitsu.domain.models.anime.LinksXXModel
 
 data class LinksXX(
     @SerializedName("self")
@@ -10,6 +11,6 @@ data class LinksXX(
     val related: String
 )
 
-fun LinksXX.toDomain() = com.muradtop.kitsu.domain.models.anime.LinksXXModel(
+fun LinksXX.toDomain() =  LinksXXModel(
     self, related
 )

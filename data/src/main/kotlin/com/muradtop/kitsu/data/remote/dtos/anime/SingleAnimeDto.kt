@@ -9,4 +9,4 @@ data class SingleAnimeDto(
 )
 
 fun SingleAnimeDto.toDomain() =
-    com.muradtop.kitsu.domain.models.anime.SingleAnimeModel(data.toDomain())
+    SingleAnimeModel(data.toDomain())

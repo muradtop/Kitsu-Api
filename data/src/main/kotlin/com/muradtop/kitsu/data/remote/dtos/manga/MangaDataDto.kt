@@ -18,7 +18,7 @@ data class MangaData(
 )
 
 fun MangaData.toDomain() =
-    com.muradtop.kitsu.domain.models.manga.MangaDataModel(
+     MangaDataModel(
         id,
         type,
         links.toDomain(),

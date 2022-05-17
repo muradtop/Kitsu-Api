@@ -10,4 +10,4 @@ data class MangaCharacters(
 )
 
 fun MangaCharacters.toDomain() =
-    com.muradtop.kitsu.domain.models.manga.MangaCharactersModel(links.toDomain())
+     MangaCharactersModel(links.toDomain())

@@ -63,7 +63,7 @@ data class MangaDto(
     val mangaType: String
 )
 
-fun MangaDto.toDomain() = com.muradtop.kitsu.domain.models.manga.MangaModel(
+fun MangaDto.toDomain() =  MangaModel(
     createdAt,
     updatedAt,
     slug,

@@ -1,6 +1,6 @@
 package com.muradtop.kitsu.di
 
-import com.timplifier.kitsu.data.remote.NetworkClient
+import com.muradtop.kitsu.data.remote.NetworkClient
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

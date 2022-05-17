@@ -31,7 +31,7 @@ data class Relationships(
     val animeStaff: AnimeStaff?
 )
 
-fun Relationships.toDomain() = com.muradtop.kitsu.domain.models.anime.RelationshipsModel(
+fun Relationships.toDomain() = RelationshipsModel(
     genres?.toDomain(),
     categories?.toDomain(),
     castings?.toDomain(),

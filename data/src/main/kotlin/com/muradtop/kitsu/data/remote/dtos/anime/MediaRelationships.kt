@@ -10,6 +10,6 @@ data class MediaRelationships(
 )
 
 fun MediaRelationships.toDomain() =
-    com.muradtop.kitsu.domain.models.anime.MediaRelationshipsModel(
+    MediaRelationshipsModel(
         links.toDomain()
     )

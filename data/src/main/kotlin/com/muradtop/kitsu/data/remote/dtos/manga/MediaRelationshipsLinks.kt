@@ -11,6 +11,6 @@ data class LinksXXXXXXX(
     val related: String
 )
 
-fun LinksXXXXXXX.toDomain() = com.muradtop.kitsu.domain.models.manga.LinksXXXXXXXModel(
+fun LinksXXXXXXX.toDomain() =  LinksXXXXXXXModel(
     self, related
 )

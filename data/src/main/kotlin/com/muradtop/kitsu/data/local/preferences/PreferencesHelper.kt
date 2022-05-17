@@ -2,11 +2,11 @@ package com.muradtop.kitsu.data.local.preferences
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.timplifier.kitsu.data.local.preferences.PreferencesKeys.ACCESS_TOKEN_KEY
-import com.timplifier.kitsu.data.local.preferences.PreferencesKeys.IS_AUTHENTICATED
-import com.timplifier.kitsu.data.local.preferences.PreferencesKeys.LOGIN_KEY
-import com.timplifier.kitsu.data.local.preferences.PreferencesKeys.PASSWORD_KEY
-import com.timplifier.kitsu.data.local.preferences.PreferencesKeys.REFRESH_TOKEN_KEY
+import com.muradtop.kitsu.data.local.preferences.PreferencesKeys.ACCESS_TOKEN_KEY
+import com.muradtop.kitsu.data.local.preferences.PreferencesKeys.IS_AUTHENTICATED
+import com.muradtop.kitsu.data.local.preferences.PreferencesKeys.LOGIN_KEY
+import com.muradtop.kitsu.data.local.preferences.PreferencesKeys.PASSWORD_KEY
+import com.muradtop.kitsu.data.local.preferences.PreferencesKeys.REFRESH_TOKEN_KEY
 
 class PreferencesHelper(context: Context) {
 

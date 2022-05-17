@@ -13,6 +13,6 @@ data class Titles(
     val jaJp: String?
 )
 
-fun Titles.toDomain() = com.muradtop.kitsu.domain.models.anime.TitlesModel(
+fun Titles.toDomain() =  TitlesModel(
     en, enJp, jaJp
 )

@@ -2,6 +2,7 @@ package com.muradtop.kitsu.presentation.models.auth
 
 import com.muradtop.kitsu.domain.models.auth.TokenModel
 
+
 data class TokenUI(
     val accessToken: String,
     val createdAt: Long,
@@ -11,4 +12,4 @@ data class TokenUI(
     val tokenType: String
 )
 
-fun com.muradtop.kitsu.domain.models.auth.TokenModel.toUI() = TokenUI(accessToken, createdAt, expiresIn, refreshToken, scope, tokenType)
+fun TokenModel.toUI() = TokenUI(accessToken, createdAt, expiresIn, refreshToken, scope, tokenType)

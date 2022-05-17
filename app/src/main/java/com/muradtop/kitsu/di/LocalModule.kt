@@ -1,7 +1,7 @@
 package com.muradtop.kitsu.di
 
 import android.content.Context
-import com.timplifier.kitsu.data.local.preferences.PreferencesHelper
+import com.muradtop.kitsu.data.local.preferences.PreferencesHelper
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

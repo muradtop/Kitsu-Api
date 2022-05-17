@@ -9,6 +9,6 @@ data class AnimeCharacters(
     val links: LinksXXXXXXXXXXX
 )
 
-fun AnimeCharacters.toDomain() = com.muradtop.kitsu.domain.models.anime.AnimeCharactersModel(
+fun AnimeCharacters.toDomain() =  AnimeCharactersModel(
     links.toDomain()
 )

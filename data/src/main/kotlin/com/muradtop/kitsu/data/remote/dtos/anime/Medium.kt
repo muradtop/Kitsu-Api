@@ -11,4 +11,4 @@ data class Medium(
     val height: Int?
 )
 
-fun Medium.toDomain() = com.muradtop.kitsu.domain.models.anime.MediumModel(width, height)
+fun Medium.toDomain() =  MediumModel(width, height)

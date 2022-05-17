@@ -2,6 +2,7 @@ package com.muradtop.kitsu.presentation.models.anime
 
 import com.muradtop.kitsu.domain.models.anime.LinksXXXXXXXXXXXXXModel
 
+
 data class LinksXXXXXXXXXXXXXUI(
     val first: String,
     val prev: String?,
@@ -9,4 +10,4 @@ data class LinksXXXXXXXXXXXXXUI(
     val last: String
 )
 
-fun com.muradtop.kitsu.domain.models.anime.LinksXXXXXXXXXXXXXModel.toUI() = LinksXXXXXXXXXXXXXUI(first, prev, next, last)
+fun LinksXXXXXXXXXXXXXModel.toUI() = LinksXXXXXXXXXXXXXUI(first, prev, next, last)

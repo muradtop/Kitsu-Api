@@ -6,4 +6,4 @@ data class StreamingLinksUI(
     val links: LinksXXXXXXXXXUI
 )
 
-fun com.muradtop.kitsu.domain.models.anime.StreamingLinksModel.toUI() = StreamingLinksUI(links.toUI())
+fun  StreamingLinksModel.toUI() = StreamingLinksUI(links.toUI())

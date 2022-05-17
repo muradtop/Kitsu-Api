@@ -11,4 +11,4 @@ data class SmallX(
     val height: Int?
 )
 
-fun SmallX.toDomain() = com.muradtop.kitsu.domain.models.anime.SmallXModel(width, height)
+fun SmallX.toDomain() =  SmallXModel(width, height)

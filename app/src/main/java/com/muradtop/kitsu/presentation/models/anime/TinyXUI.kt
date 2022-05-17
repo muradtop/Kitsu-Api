@@ -7,4 +7,4 @@ data class TinyXUI(
     val height: Int?
 )
 
-fun com.muradtop.kitsu.domain.models.anime.TinyXModel.toUI() = TinyXUI(width, height)
+fun  TinyXModel.toUI() = TinyXUI(width, height)

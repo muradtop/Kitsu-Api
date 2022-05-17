@@ -3,8 +3,8 @@ package com.muradtop.kitsu.data.remote.pagingsources
 import android.net.Uri
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.timplifier.kitsu.data.remote.apiservices.AnimeApiService
-import com.timplifier.kitsu.data.remote.dtos.anime.AnimeDataDto
+import com.muradtop.kitsu.data.remote.apiservices.AnimeApiService
+import com.muradtop.kitsu.data.remote.dtos.anime.AnimeDataDto
 import retrofit2.HttpException
 import java.io.IOException
 
