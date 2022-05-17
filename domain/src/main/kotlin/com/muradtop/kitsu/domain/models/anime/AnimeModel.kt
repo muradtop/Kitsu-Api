@@ -1,0 +1,33 @@
+package com.muradtop.kitsu.domain.models.anime
+
+data class AnimeModel(
+    val createdAt: String?,
+    val updatedAt: String?,
+    val slug: String?,
+    val synopsis: String?,
+    val coverImageTopOffset: Int,
+    val titles: com.muradtop.kitsu.domain.models.anime.TitlesModel?,
+    val canonicalTitle: String?,
+    val abbreviatedTitles: List<String>?,
+    val averageRating: String?,
+    val ratingFrequencies: com.muradtop.kitsu.domain.models.anime.RatingFrequenciesModel?,
+    val userCount: Int,
+    val favoritesCount: Int,
+    val startDate: String?,
+    val endDate: String?,
+    val nextRelease: Any?,
+    val popularityRank: Int?,
+    val ratingRank: Int?,
+    val ageRating: String?,
+    val ageRatingGuide: String?,
+    val subtype: String?,
+    val status: String?,
+    val tba: String?,
+    val posterImage: com.muradtop.kitsu.domain.models.anime.PosterImageModel?,
+    val coverImage: com.muradtop.kitsu.domain.models.anime.CoverImageModel?,
+    val episodeCount: Int?,
+    val episodeLength: Int?,
+    val youtubeVideoId: String?,
+    val showType: String?,
+    val nsfw: Boolean?
+)
